@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+      h1 {
+         text-align: left;
+      }
+
+      div {
+         text-align: left;
+      }
+
+      #customers {
+         font-family: Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+         border: 1px solid #ddd;
+         padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+         background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+         background-color: #ddd;
+      }
+
+      #customers th {
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: left;
+         background-color: #04AA6D;
+         color: white;
+      }
+   </style>
+</head>
+
+l<body style="background-color:#FFFFE0;">
+      <br>
+      <h1>Niranjana Subramanian</h1>
+      <h1>1002046305</h1><br><br>
+      <div>
+         <a href="/">Home</a><br><br>
+      </div>
+      <table id='customers'>
+         <tr>
+            <th><b>Magnitude</b></th>
+            <th><b>count</b></th>
+         </tr>
+         {% for col in rows %}
+         <tr>
+            <td>{{col[0]}}</td>
+            <td>{{col[1]}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+
+</body>
+
+</html>
